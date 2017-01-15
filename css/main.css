@@ -1,6 +1,6 @@
 body {
     font: 125%/1.75 Lustria, Georgia;
-    color: #444;
+    color: #eee;
     margin: 0
 }
 
@@ -8,8 +8,16 @@ p {
     margin: 3.5em 0
 }
 
+h3 {
+    padding: 0;
+    margin: 0;
+    color: #eee;
+    text-align: center;
+}
+
 h2 {
-    color: #b30027;
+    text-align: center;
+    color: #eee;
     font-size: 175%;
     line-height: 1.5;
     margin: .51em 0
@@ -27,6 +35,11 @@ img {
 
 body>svg {
     display: none
+}
+
+strong {
+    padding-bottom: 3px;
+    font-size: .8em;
 }
 
 .grid {
@@ -75,8 +88,14 @@ body>svg {
 .caption {
     font-size: 90%;
     line-height: 1.95;
-    color: #a4a4a4;
+    color: #555;
     margin: 0
+}
+
+.my_face {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
 }
 
 .image {
@@ -86,17 +105,45 @@ body>svg {
     overflow: hidden
 }
 
+.contact strong {
+    color: #ddd;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social_image {
+    width: 60%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #ccc, 0 1px 0 1px #ccc;
+    overflow: hidden
+}
+
+.social_img a {
+    display: inline-block;
+}
+
 .image img {
     display: block
 }
 
 .image--8x5 {
-    padding-bottom: 55.5%
+    padding-bottom: 0;
 }
 
 .image--8x5 img {
-    width: 100%;
+    width: 100%
     margin-bottom: -62.5%
+}
+
+.image--1x2 {
+    width: 150px;
+    width: 100px;
+    margin: 0 auto 15px;
+    /*padding-bottom: 55.5%*/
+}
+
+.image--1x2 img {
 }
 
 .nav a {
@@ -106,6 +153,7 @@ body>svg {
 }
 
 .bullet-list {
+    list-style-type: none;
     list-style: none;
     margin-left: 0;
     padding-left: 0
@@ -115,12 +163,44 @@ body>svg {
     margin: .875em 0
 }
 
-.bullet-list li:before {
-    display: inline-block;
-    content: "\25CF";
-    margin-left: -1.25em;
-    width: 1.25em;
-    color: #999
+.bullet-list a {
+    text-decoration: none;
+}
+
+.bullet-list--alt {
+    text-align: center;
+    list-style-type: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0
+}
+
+.bullet-list--alt li {
+    margin: .875em 0
+}
+
+.bullet-list--alt a {
+    text-decoration: none;
+}
+
+.bullet-list--social {
+    list-style-type: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0
+}
+
+.bullet-list--social li {
+    margin: .875em 0
+}
+
+.bullet-list--social ul {
+    width: 60%;
+    margin auto;
+}
+
+.bullet-list--social a {
+    text-decoration: none;
 }
 
 .page__nav {
@@ -136,7 +216,7 @@ body>svg {
 }
 
 .page__header {
-    padding: 2% 0;
+    padding: 0;
     background: #FF8B84
 }
 
@@ -148,29 +228,30 @@ body>svg {
     letter-spacing: .35em;
     word-spacing: .5em;
     margin: .5em 0;
-    -webkit-animation: 1s 1s fade backwards ease-out;
-    animation: 1s 1s fade backwards ease-out
+    -webkit-animation: .5s .5s fade backwards ease-out;
+    animation: .5s .5s fade backwards ease-out
 }
 
 .page__subtitle {
     display: block;
     font-size: 115%;
-    color: #ddd;
+    color: #eee;
     text-transform: uppercase;
     letter-spacing: .35em;
     word-spacing: .5em;
     margin: .5em 0;
-    -webkit-animation: 1s 1s fade backwards ease-out;
-    animation: 1s 1s fade backwards ease-out
+    -webkit-animation: .5s .5s fade backwards ease-out;
+    animation: .5s .5s fade backwards ease-out
 }
 
 .page__content {
-    padding: 5% 0;
-    background: #e4e4e4
+    padding: 0;
+    background: #fff
 }
 
 .page__content--alt {
-    background: #CF7A89;
+    padding: 0;
+    background: #F2594B;
     color: #c6c6c6
 }
 
@@ -179,13 +260,19 @@ body>svg {
 }
 
 .page__content--alt h2 {
-    color: #fff
+    color: #fff;
 }
 
 .page__content--alt strong {
-    color: #fff
+    color: #eee
 }
 
+.social_icon {
+    padding: 0 10px;
+    margin: 0px;
+    height: 32px;
+    width: 32px;
+}
 .work a {
     text-decoration: none;
     color: inherit
@@ -198,6 +285,15 @@ body>svg {
 }
 
 @media screen and (max-width:640px) {
+    .image--8x5 {
+        padding-bottom: 0
+    }
+
+    .image--8x5 img {
+        width: 100%
+        margin-bottom: -12.5%
+    }
+
     .grid {
         padding: 0
     }
@@ -210,6 +306,15 @@ body>svg {
 }
 
 @media screen and (max-width:310px) {
+    .image--8x5 {
+        padding-bottom: 0;
+    }
+
+    .image--8x5 img {
+        width: 100%
+        margin-bottom: -1.5%
+    }
+
     .grid__item {
         font-size: .7rem
     }
