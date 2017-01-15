@@ -82,7 +82,7 @@ body>svg {
 .image {
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 0 1px #cecece, 0 2px 0 1px #cecece;
+    box-shadow: 0 0 0 1px #ccc, 0 1px 0 1px #ccc;
     overflow: hidden
 }
 
@@ -91,7 +91,7 @@ body>svg {
 }
 
 .image--8x5 {
-    padding-bottom: 62.5%
+    padding-bottom: 55.5%
 }
 
 .image--8x5 img {
@@ -136,7 +136,7 @@ body>svg {
 }
 
 .page__header {
-    padding: 6% 0;
+    padding: 2% 0;
     background: #FF8B84
 }
 
@@ -155,7 +155,7 @@ body>svg {
 .page__subtitle {
     display: block;
     font-size: 115%;
-    color: #734370;
+    color: #ddd;
     text-transform: uppercase;
     letter-spacing: .35em;
     word-spacing: .5em;
@@ -166,11 +166,11 @@ body>svg {
 
 .page__content {
     padding: 5% 0;
-    background: #fff
+    background: #e4e4e4
 }
 
 .page__content--alt {
-    background: #A16183;
+    background: #CF7A89;
     color: #c6c6c6
 }
 
