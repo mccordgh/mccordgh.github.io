@@ -284,6 +284,10 @@ strong {
     border-bottom: 1px solid #ccc
 }
 
+.work:hover {
+    box-shadow: 1px 1px 1px 2px solid;
+}
+
 @media screen and (max-width:640px) {
     .image--8x5 {
         padding-bottom: 0
