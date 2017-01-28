@@ -111,6 +111,10 @@ strong {
     margin: 0 auto;
 }
 
+.social_media_grid {
+    padding: 5px;
+}
+
 .social_image {
     width: 60%;
     background: #fff;
@@ -125,6 +129,13 @@ strong {
 
 .image img {
     display: block
+}
+
+.social_icon {
+    padding: 0 10px;
+    margin: 0px;
+    height: 32px;
+    width: 32px;
 }
 
 .image--8x5 {
@@ -216,7 +227,7 @@ strong {
 
 .page__header {
     padding: 0;
-    background: #FF8B84
+    background: #F2594B
 }
 
 .page__title {
@@ -266,12 +277,6 @@ strong {
     color: #eee
 }
 
-.social_icon {
-    padding: 0 10px;
-    margin: 0px;
-    height: 32px;
-    width: 32px;
-}
 .work a {
     text-decoration: none;
     color: inherit
@@ -296,7 +301,13 @@ strong {
         width: 100%
         margin-bottom: -12.5%
     }
-
+    
+    .social_icon {
+        margin: 5px;
+        height: 32px;
+        width: 32px;
+    }
+    
     .grid {
         padding: 0
     }
