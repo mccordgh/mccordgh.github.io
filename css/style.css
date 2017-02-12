@@ -84,8 +84,8 @@ span {
 .image--headshot {
 	width: 40%;
 	height: 15%;
-	max-width: 500px;
-	max-height: 500px;
+	max-width: 400px;
+	max-height: 400px;
 	border-radius: 400px;
 	margin: 0 auto;
 }
