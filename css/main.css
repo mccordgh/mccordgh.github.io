@@ -10,7 +10,7 @@ body {
 
 p {
     margin: 3.5em 0;
-    color: #fff;
+    color: #000;
 }
 
 h3 {
@@ -22,11 +22,10 @@ h3 {
 
 h2 {
     text-align: center;
-    color: #eee;
+    color: #000;
     font-size: 175%;
     line-height: 1.5;
     margin: 0;
-    margin-top: .51em;
 }
 
 h2:first-child,
@@ -91,7 +90,7 @@ strong {
 .caption {
     font-size: 90%;
     line-height: 1.95;
-    color: #fff;
+    color: #000;
     margin: 0;
 }
 
@@ -262,13 +261,17 @@ strong {
 .page__content {
     height: 100%;
     padding: 0;
-    background: #000;
+    background: #fff;
 }
 
 .page__content--alt {
     padding: 0;
     background: #E72E3C;
     color: #c6c6c6;
+}
+
+.page__content--alt h2{
+    color: #fff;
 }
 
 .page__content a:not(.button) {
@@ -297,6 +300,20 @@ strong {
 .work:hover {
     box-shadow: 1px 1px 1px 2px solid;
 }
+
+.mccord {
+    border-radius: 100px;
+}
+
+.md-48 { 
+    font-size: 48px;
+    
+}
+
+.md-lightBlue {
+    color: #2EB2FF; 
+}
+
 
 @media screen and (max-width:640px) {
     .image--8x5 {
