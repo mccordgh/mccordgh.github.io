@@ -3,9 +3,8 @@ $( document ).ready(function() {
     $('#header--title').fadeIn(2000);
 
     $('.card').hover((event) => {
-    	if ($(event.target).attr('class') !== 'card-action' && $(event.target).attr('class') !== 'card-content') {
-    		$(event.target).css('box-shadow', '0 60px 60px #333');
-    	}
+    	if ($(event.target).attr('class') !== 'card-action' && $(event.target).attr('class') !== 'card-content')
+            $(event.currentTarget).css('box-shadow', '0 60px 60px #333');
     });
 
     $('.card').mouseleave((event) => {
