@@ -1,0 +1,231 @@
+a {
+	pointer: cursor;
+}
+
+body {
+	background: url('../img/project_bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h5 {
+	text-align: center;
+	margin: 0px;
+  font-size: 2rem;
+}
+
+span {
+	display: block;
+	text-align: center;
+}
+
+.awards
+{
+    text-align: center;
+    color: white;
+}
+
+.awards .col
+{
+    margin-bottom: 24px;
+    width: 90%;
+}
+
+.awards h5
+{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.awards p
+{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.25em;
+}
+
+.awards hr
+{
+    width: 40px;
+    margin-bottom: 45px;
+}
+
+.card {
+	box-shadow: 0 5px 15px #000;
+	border-radius: 10px;
+	min-height: 350px;
+}
+
+.col--footer {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.col--project {
+	min-width: 350px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 90%;
+}
+
+.light-blue-text {
+	color: rgb(46, 178, 255);
+}
+
+.image--headshot {
+	width: 40%;
+	height: 15%;
+	max-width: 500px;
+	max-height: 500px;
+	border-radius: 400px;
+	margin: 0 auto;
+}
+
+.image--award {
+	height: 200px%;
+	width: 200px;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+
+.image--project {
+	height: 50%;
+	width: 100%;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	min-height: 250px;
+}
+
+.page--content {
+	margin: 0;
+}
+
+.page--footer {
+	text-align: center;
+	margin: 0;
+}
+
+.page--footer span {
+	margin-bottom: 10px;
+	font-size: 1.5em;
+}
+
+.page--header {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.page--header h2
+{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.page--header h5
+{
+  text-transform: uppercase;
+  padding: 10px;
+  display: inline-block;
+}
+
+.page--title {
+	display: block;
+	text-align: center;
+}
+
+.projects
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projects .col
+{
+    margin-bottom: 24px;
+    width: 90%;
+}
+
+.projects h2 {
+	margin-top: 0;
+}
+
+.projects h5
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.projects h6
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.projects hr
+{
+    width: 40px;
+    margin-bottom: 45px;
+}
+
+.small--hr {
+	width: 20%;
+}
+
+.social--icon {
+    padding: 0 10px;
+    margin: 0;
+    height: 32px;
+    width: 48px;
+}
+
+.title {
+	font-weight: 900;
+}
+
+@media screen and (max-width:1024px) {
+	.image--project {
+		min-height: 200px;
+	}
+
+	.row {
+		padding: 0 12%;
+	}
+}
+
+@media screen and (max-width:768px) {
+/*	html {
+		width: 115%;
+	}
+*/
+	.row {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width:330px) {
+	html {
+		width: 100%;
+	}
+
+	.col--project {
+		min-width: 250px;
+	}
+
+	.row {
+		padding: 0;
+	}
+}
+
