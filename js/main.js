@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
     $('.card').hover((event) => {
     	if ($(event.target).attr('class') !== 'card-action' && $(event.target).attr('class') !== 'card-content') {
-    		$(event.target).css('box-shadow', '0 75px 75px #000');
+    		$(event.target).css('box-shadow', '0 60px 60px #333');
     	}
     });
 
