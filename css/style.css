@@ -8,6 +8,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 h2 {
@@ -35,6 +36,10 @@ span {
 {
     margin-bottom: 24px;
     width: 90%;
+}
+
+.awards h2 {
+  font-family: 'Pacifico', cursive;
 }
 
 .awards h5
@@ -157,6 +162,7 @@ span {
 
 .projects h2 {
 	margin-top: 0;
+	font-family: 'Pacifico', cursive;
 }
 
 .projects h5
@@ -165,6 +171,7 @@ span {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-size: 1.5em;
+
 }
 
 .projects h6
@@ -189,10 +196,6 @@ span {
     margin: 0;
     height: 32px;
     width: 48px;
-}
-
-.title {
-	font-weight: 900;
 }
 
 @media screen and (max-width:1024px) {
