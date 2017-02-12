@@ -1,8 +1,25 @@
-#circle {
-    width: 120px;
-    height: 120px;
-    background: #7fee1d;
-    -moz-border-radius: 60px;
-    -webkit-border-radius: 60px;
-    border-radius: 60px;
+html, body, div {
+	margin: 0;
+	padding: 0;
 }
+
+html {
+	background-color: #000000;
+}
+
+.parallax-container {
+	margin:0;
+	min-width: 105vh;
+	min-height: 105vh;
+	padding:0;
+	background-color:#fff;
+}
+
+.alt2 {
+	background-color:#888;
+}
+
+.alt3 {
+	background-color:#ccc;
+}
+

@@ -230,6 +230,8 @@ strong {
 .page__header {
     padding: 0;
     background-color: #E72E3C;
+    min-height: 105vh;
+    min-width: 100vh;
 }
 
 .page__title {
@@ -259,12 +261,15 @@ strong {
 }
 
 .page__content {
-    height: 100%;
+    min-height: 105vh;
+    min-width: 100vh;
     padding: 0;
     background: #fff;
 }
 
 .page__content--alt {
+    min-height: 105vh;
+    min-width: 100vh;
     padding: 0;
     background: #E72E3C;
     color: #c6c6c6;
@@ -284,6 +289,12 @@ strong {
 */
 .page__content--alt strong {
     color: #eee;
+}
+
+.portrait {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
 }
 
 .work a {
