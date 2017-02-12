@@ -56,12 +56,6 @@ span {
     font-size: 1.25em;
 }
 
-.awards hr
-{
-    width: 40px;
-    margin-bottom: 45px;
-}
-
 .card {
 	box-shadow: 0 5px 15px #000;
 	border-radius: 10px;
@@ -181,21 +175,15 @@ span {
     margin-bottom: 45px;
 }
 
-.projects hr
-{
-    width: 40px;
-    margin-bottom: 45px;
-}
-
-.small--hr {
-	width: 20%;
-}
-
 .social--icon {
     padding: 0 10px;
     margin: 0;
     height: 32px;
     width: 48px;
+}
+
+.title {
+	text-decoration: underline;
 }
 
 @media screen and (max-width:1024px) {
