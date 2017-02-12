@@ -76,8 +76,8 @@ span {
 	width: 90%;
 }
 
-.light-blue-text {
-	color: rgb(46, 178, 255);
+.hidden {
+	display: none;
 }
 
 .image--headshot {
@@ -102,6 +102,10 @@ span {
 	border-radius: 20px;
 	margin-bottom: 10px;
 	min-height: 250px;
+}
+
+.light-blue-text {
+	color: rgb(46, 178, 255);
 }
 
 .page--content {
@@ -203,6 +207,12 @@ span {
 */
 	.row {
 		padding: 0;
+	}
+}
+
+@media screen and (max-width:375px) {
+	.image--headshot {
+		margin-top: 20px;
 	}
 }
 
