@@ -1,7 +1,4 @@
 $( document ).ready(function() {
-    $('#headshot').fadeIn(2000);
-    $('#header--title').fadeIn(2000);
-
     $('.card').hover((event) => {
     	console.log(event.currentTarget);
 	    $(event.currentTarget).css('box-shadow', '0 15px 15px #333');
