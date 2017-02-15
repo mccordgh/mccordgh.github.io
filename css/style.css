@@ -1,5 +1,6 @@
-a {
+a:hover {
 	pointer: cursor;
+	text-decoration: underline;
 }
 
 body {
@@ -9,16 +10,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
 	font-family: 'Nunito Sans', sans-serif;
-}
-
-h2 {
-	font-size: 3em;
-}
-
-h5 {
-	text-align: center;
-	margin: 0px;
-  font-size: 2rem;
 }
 
 span {
@@ -34,8 +25,8 @@ span {
 
 .awards .col
 {
-    margin-bottom: 24px;
-    width: 90%;
+    margin: 0 auto 24px;
+    /*width: 80%;*/
 }
 
 .awards h2 {
@@ -57,19 +48,25 @@ span {
 }
 
 .card {
+	background-color: #333;
 	box-shadow: 0 5px 15px #000;
 	border-radius: 10px;
 	min-height: 350px;
 }
 
+.card-panel {
+	background-color: #333;
+}
+
 .col--footer {
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .col--project {
-	min-width: 350px;
-	margin: 0 auto;
+	min-width: 280px;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
@@ -90,22 +87,25 @@ span {
 }
 
 .image--award {
-	height: 200px%;
-	width: 200px;
+	height: 200px;
+	width: 250px;
 	margin: 0 auto;
 	border-radius: 20px;
 }
 
 .image--project {
-	height: 50%;
 	width: 100%;
 	border-radius: 20px;
 	margin-bottom: 10px;
-	min-height: 250px;
+	height: 250px;
 }
 
 .light-blue-text {
 	color: rgb(46, 178, 255);
+}
+
+.material-placeholder {
+	margin-bottom: 15px;
 }
 
 .page--content {
@@ -131,12 +131,12 @@ span {
 .page--header h2
 {
     font-weight: 900;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .page--header h5
 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   padding: 10px;
   display: inline-block;
 }
@@ -166,7 +166,7 @@ span {
 .projects h5
 {
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 15px;
     font-size: 1.5em;
 
@@ -175,7 +175,7 @@ span {
 .projects h6
 {
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 45px;
 }
 
@@ -188,23 +188,20 @@ span {
 
 .title {
 	text-decoration: underline;
+	color: #333;
 }
 
 @media screen and (max-width:1024px) {
 	.image--project {
-		min-height: 200px;
+		/*min-height: 200px;*/
 	}
 
 	.row {
-		padding: 0 12%;
+		/*padding: 0 12%;*/
 	}
 }
 
 @media screen and (max-width:768px) {
-/*	html {
-		width: 115%;
-	}
-*/
 	.row {
 		padding: 0;
 	}
@@ -212,17 +209,13 @@ span {
 
 @media screen and (max-width:375px) {
 	.image--headshot {
-		margin-top: 20px;
+		/*margin-top: 20px;*/
 	}
 }
 
 @media screen and (max-width:330px) {
-	html {
-		width: 100%;
-	}
-
 	.col--project {
-		min-width: 250px;
+		/*min-width: 250px;*/
 	}
 
 	.row {
