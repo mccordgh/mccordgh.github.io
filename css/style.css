@@ -205,6 +205,9 @@ span {
 	.row {
 		padding: 0;
 	}
+	.image--project {
+		max-height: 200px;
+	}
 }
 
 @media screen and (max-width:375px) {
