@@ -14,10 +14,6 @@ span {
 	text-align: center;
 }
 
-.award-title {
-	margin-left: 45px;
-}
-
 .awards
 {
 	text-align: center;
@@ -30,6 +26,7 @@ span {
 
 .awards h2 {
 	text-align: left;
+	margin-left: 40px;
   font-family: 'Pacifico', cursive;
 }
 
@@ -78,8 +75,8 @@ span {
 
 .image--headshot {
 	float: left;
-	width: 200px;
-	height: 200px;
+	width: 240px;
+	height: 240px;
 	border-radius: 400px;
 	/*margin: 100px 20px 20px 0;*/
 }
@@ -150,7 +147,7 @@ span {
 .projects
 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .projects .col
@@ -199,8 +196,8 @@ span {
 }
 
 .oval {
-  width: 290px;
-  height: 220px;
+	width: 280px;
+  height: 280px;
 	border-radius: 50%;
   float: left;
   shape-outside: ellipse();
@@ -240,12 +237,29 @@ span {
 	}
 
 	.oval {
-  width: 200px;
-  height: 200px;
-  margin: 0;
-  padding: 0;
-  display: block;
-  width: 100%;
+	  width: 200px;
+	  height: 200px;
+	  margin: 0;
+	  padding: 0;
+	  display: block;
+	  width: 100%;
+	}
+}
+
+@media screen and (max-width:440px) {
+	.page--header h2 {
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.projects h2 {
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.awards h2 {
+		text-align: center;
+		margin-left: 0;
 	}
 }
 
