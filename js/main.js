@@ -4,22 +4,18 @@ let dealInterval = "";
 
 $( document ).ready(function() {
 	
-	$('#headshot').click((event) => {
-	
-		clickCounter += 1;
-
-		if (clickCounter > 2) {
-			if (!dealWithIt) {
-				clickCounter = 0;
-				dealWithItYo();
-				dealWithIt = true;
-			} else {
-				dealWithIt = false;
-				clickCounter = 0;
-				unDealWithItYo();
-			}
+	window.onscroll = () => {
+		if ( isNotVisible( $('.page--header') ) ) {
+			console.log("page header is gone");
 		}
-	
+	};
+
+	$('#headshot').click((event) => {
+		whatsTheDeal();	
+	});
+
+	$('#dealGlasses').click((event) => {
+		whatsTheDeal();	
 	});
 
 });
@@ -49,5 +45,37 @@ function pullUpTheBeat() {
 	if (setTop < -54) {
 		$('#headshot').attr('src', "img/matt_close_beanie.jpg");
 		clearInterval(dealInterval);
+	}
+}
+
+function isNotVisible(element){
+	let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+	let d = $(document).scrollTop() + 500;
+	
+  p = element.position();
+  //vertical
+  if (p.top > h + d || p.top > h - d){
+  	$('#dealGlasses').addClass('hidden');
+  } else {
+  	$('#dealGlasses').removeClass('hidden');  	
+  }
+
+}
+
+function whatsTheDeal() {
+	clickCounter += 1;
+
+	if (clickCounter > 2) {
+		if (!dealWithIt) {
+			dealWithIt = true;
+			clickCounter = 0;
+			clearInterval(dealInterval);
+			dealWithItYo();
+		} else {
+			dealWithIt = false;
+			clickCounter = 0;
+			clearInterval(dealInterval);
+			unDealWithItYo();
+		}
 	}
 }
