@@ -4,12 +4,13 @@ a:hover {
 }
 
 body {
-	background: url('../img/project_bg.jpg') no-repeat center center fixed; 
+/*	background: url('../img/project_bg.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	font-family: 'Nunito Sans', sans-serif;
+*/	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 600;
 }
 
 span {
@@ -19,14 +20,13 @@ span {
 
 .awards
 {
-    text-align: center;
-    color: white;
+	text-align: center;
+	color: white;
 }
 
 .awards .col
 {
-    margin: 0 auto 24px;
-    /*width: 80%;*/
+	margin: 0 auto 24px;
 }
 
 .awards h2 {
@@ -35,27 +35,26 @@ span {
 
 .awards h5
 {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5em;
 }
 
 .awards p
 {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.25em;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.25em;
 }
 
 .card {
-	background-color: #333;
 	box-shadow: 0 5px 15px #000;
 	border-radius: 10px;
 	min-height: 350px;
 }
 
-.card-panel {
-	background-color: #333;
+.card-content {
+	opacity: 1;
 }
 
 .col--footer {
@@ -78,12 +77,11 @@ span {
 }
 
 .image--headshot {
-	width: 40%;
-	height: 15%;
-	max-width: 400px;
-	max-height: 400px;
+	float: left;
+	width: 200px;
+	height: 200px;
 	border-radius: 400px;
-	margin: 0 auto;
+	/*margin: 100px 20px 20px 0;*/
 }
 
 .image--award {
@@ -101,6 +99,8 @@ span {
 }
 
 .light-blue-text {
+	font-size: 1.2em;
+	padding: 15px;
 	color: rgb(46, 178, 255);
 }
 
@@ -113,6 +113,7 @@ span {
 }
 
 .page--footer {
+	/*background-color: #333;*/
 	text-align: center;
 	margin: 0;
 }
@@ -123,22 +124,22 @@ span {
 }
 
 .page--header {
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  text-align: left;
+  padding: 10px;
+}
+
+.page--header p {
+	color: white;
 }
 
 .page--header h2
 {
-    font-weight: 900;
-    /*text-transform: uppercase;*/
+  font-weight: 900;
 }
 
 .page--header h5
 {
-  /*text-transform: uppercase;*/
   padding: 10px;
-  display: inline-block;
 }
 
 .page--title {
@@ -148,42 +149,42 @@ span {
 
 .projects
 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .projects .col
 {
-    margin-bottom: 24px;
-    width: 90%;
+  margin-bottom: 24px;
+  width: 90%;
 }
 
 .projects h2 {
+	text-align: left;
 	margin-top: 0;
+	margin-left: 16px;
 	font-family: 'Pacifico', cursive;
 }
 
 .projects h5
 {
-    text-align: center;
-    /*text-transform: uppercase;*/
-    margin-bottom: 15px;
-    font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5em;
 
 }
 
 .projects h6
 {
-    text-align: center;
-    /*text-transform: uppercase;*/
-    margin-bottom: 45px;
+  text-align: center;
+  margin-bottom: 45px;
 }
 
 .social--icon {
-    padding: 0 10px;
-    margin: 0;
-    height: 32px;
-    width: 48px;
+  padding: 0 10px;
+  margin: 0;
+  height: 32px;
+  width: 48px;
 }
 
 .title {
@@ -191,36 +192,67 @@ span {
 	color: #333;
 }
 
-@media screen and (max-width:1024px) {
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.oval {
+  width: 250px;
+  height: 250px;
+	border-radius: 50%;
+  float: left;
+  shape-outside: ellipse();
+  padding: 10px;
+	background-clip: content-box;
+}
+
+/*@media screen and (max-width:1024px) {
 	.image--project {
-		/*min-height: 200px;*/
 	}
 
 	.row {
-		/*padding: 0 12%;*/
 	}
 }
-
+*/
 @media screen and (max-width:768px) {
 	.row {
 		padding: 0;
 	}
+
 	.image--project {
 		max-height: 200px;
 	}
-}
 
-@media screen and (max-width:375px) {
 	.image--headshot {
-		/*margin-top: 20px;*/
+		display: block;
+		margin: 20px auto 0;
+		float: none;
+	}
+
+	.page--header {
+		text-align: center;
+	}
+
+	.page--header h2 {
+		margin-top: 250px;
+	}
+
+	.oval {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
 	}
 }
 
 @media screen and (max-width:330px) {
-	.col--project {
-		/*min-width: 250px;*/
+/*	.col--project {
 	}
-
+*/
 	.row {
 		padding: 0;
 	}
