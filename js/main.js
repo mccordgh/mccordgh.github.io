@@ -49,7 +49,7 @@ function pullUpTheBeat() {
 }
 
 function checkIsNotVisible(element){
-	let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+	let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 	let d = $(document).scrollTop() + 500;
 	
   p = element.position();
