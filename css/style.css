@@ -5,8 +5,8 @@ body {
 }
 
 a:hover {
-	pointer: cursor;
-	text-decoration: underline;
+	cursor: pointer;
+	text-decoration: bold;
 }
 
 span {
@@ -63,6 +63,10 @@ span {
 
 .container {
 	width: 90%;
+}
+
+.deal-with-it {
+	cursor: pointer;
 }
 
 .header--container {
@@ -233,7 +237,7 @@ span {
 	}
 
 	.page--header h2 {
-		margin-top: 250px;
+		margin-top: 290px;
 	}
 
 	.oval {
@@ -246,9 +250,10 @@ span {
 	}
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width:540px) {
 	.page--header h2 {
 		text-align: center;
+		margin-top: 50px;
 		margin-left: 0;
 	}
 
@@ -260,6 +265,14 @@ span {
 	.awards h2 {
 		text-align: center;
 		margin-left: 0;
+	}
+
+	.oval {
+		float: none;
+	}
+
+	.image--headshot {
+		float: none;
 	}
 }
 
