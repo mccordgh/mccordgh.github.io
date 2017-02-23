@@ -5,17 +5,17 @@ let dealInterval = "";
 $( document ).ready(function() {
 	
 	window.onscroll = () => {
-		if ( isNotVisible( $('.page--header') ) ) {
-			console.log("page header is gone");
-		}
+		checkIsNotVisible( $('.page--header') );
 	};
 
 	$('#headshot').click((event) => {
-		whatsTheDeal();	
+		if ($(document).width() > 1008)
+			whatsTheDeal();	
 	});
 
 	$('#dealGlasses').click((event) => {
-		whatsTheDeal();	
+		if ($(document).width() > 1008)
+			whatsTheDeal();	
 	});
 
 });
@@ -48,7 +48,7 @@ function pullUpTheBeat() {
 	}
 }
 
-function isNotVisible(element){
+function checkIsNotVisible(element){
 	let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 	let d = $(document).scrollTop() + 500;
 	
