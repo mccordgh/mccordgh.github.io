@@ -2,18 +2,70 @@ let clickCounter = 0;
 let dealWithIt = false;
 let dealInterval = "";
 
+let dealGlassesEl = $('#dealGlasses');
+let headShot = $('#headshot');
+let dtfImg = $('#dtf_img');
+let chattyImg = $('#chatty_img');
+let battleBotsImg = $('#battle_bots_img');
+let toyImg = $('#toy_img');
+
+let dtfFlag = false;
+let chattyFlag = false;
+let battleBotsFlag = false;
+let toyFlag = false;
+
 $( document ).ready(function() {
 	
 	window.onscroll = () => {
 		checkIsNotVisible( $('.page--header') );
 	};
 
-	$('#headshot').click((event) => {
+	toyImg.click((event) => {
+		if (toyFlag){
+			toyImg.attr('src', '/img/toy_factory_sm.png');
+			toyFlag = false;
+		} else {
+			toyImg.attr('src', '/img/toy_factory.png');
+			toyFlag = true;
+		}
+	})
+
+	battleBotsImg.click((event) => {
+		if (battleBotsFlag){
+			battleBotsImg.attr('src', '/img/battle_bots_sm.png');
+			battleBotsFlag = false;
+		} else {
+			battleBotsImg.attr('src', '/img/battle_bots.png');
+			battleBotsFlag = true;
+		}
+	})
+
+	dtfImg.click((event) => {
+		if (dtfFlag){
+			dtfImg.attr('src', '/img/DTF_screenshot_sm.png');
+			dtfFlag = false;
+		} else {
+			dtfImg.attr('src', '/img/DTF_screenshot.png');
+			dtfFlag = true;
+		}
+	})
+
+	chattyImg.click((event) => {
+		if (chattyFlag){
+			chattyImg.attr('src', '/img/chatty_sm.png');
+			chattyFlag = false;
+		} else {
+			chattyImg.attr('src', '/img/chatty.png');
+			chattyFlag = true;
+		}
+	})
+
+	headShot.click((event) => {
 		if ($(document).width() > 1008)
 			whatsTheDeal();	
 	});
 
-	$('#dealGlasses').click((event) => {
+	dealGlassesEl.click((event) => {
 		if ($(document).width() > 1008)
 			whatsTheDeal();	
 	});
@@ -21,7 +73,7 @@ $( document ).ready(function() {
 });
 
 function dealWithItYo(){
-	$('#headshot').attr('src', "img/matt_goof.jpg");
+	headShot.attr('src', "img/matt_goof.jpg");
 	dealInterval = setInterval(pullDownTheShades, 50);	// }
 }
 
@@ -30,20 +82,20 @@ function unDealWithItYo(){
 }
 
 function pullDownTheShades() {
-	currentTop = $('#dealGlasses').css('top');
+	currentTop = dealGlassesEl.css('top');
 	setTop = parseInt(currentTop) + 2;
-	$("#dealGlasses").css({ top: setTop + 'px' });
+	dealGlassesEl.css({ top: setTop + 'px' });
 	if (setTop > 118) {
 		clearInterval(dealInterval);
 	}
 }
 
 function pullUpTheBeat() {
-	currentTop = $('#dealGlasses').css('top');
+	currentTop = dealGlassesEl.css('top');
 	setTop = parseInt(currentTop) - 2;
-	$("#dealGlasses").css({ top: setTop + 'px' });
+	dealGlassesEl.css({ top: setTop + 'px' });
 	if (setTop < -54) {
-		$('#headshot').attr('src', "img/matt_close_beanie.jpg");
+		headShot.attr('src', "img/matt_close_beanie.jpg");
 		clearInterval(dealInterval);
 	}
 }
@@ -55,9 +107,9 @@ function checkIsNotVisible(element){
   p = element.position();
   //vertical
   if (p.top > h + d || p.top > h - d){
-  	$('#dealGlasses').addClass('hidden');
+  	dealGlassesEl.addClass('hidden');
   } else {
-  	$('#dealGlasses').removeClass('hidden');  	
+  	dealGlassesEl.removeClass('hidden');  	
   }
 
 }
