@@ -8,11 +8,13 @@ let dtfImg = $('#dtf_img');
 let chattyImg = $('#chatty_img');
 let battleBotsImg = $('#battle_bots_img');
 let toyImg = $('#toy_img');
+let wavesImg = $('#waves_img');
 
 let dtfFlag = false;
 let chattyFlag = false;
 let battleBotsFlag = false;
 let toyFlag = false;
+let wavesFlag = false;
 
 $( document ).ready(function() {
 	
@@ -28,7 +30,17 @@ $( document ).ready(function() {
 			toyImg.attr('src', '/img/toy_factory.png');
 			toyFlag = true;
 		}
-	})
+	});
+
+	wavesImg.click((event) => {
+		if (wavesFlag){
+			wavesImg.attr('src', '/img/waves87_sm.png');
+			wavesFlag = false;
+		} else {
+			wavesImg.attr('src', '/img/waves87.png');
+			wavesFlag = true;
+		}
+	});
 
 	battleBotsImg.click((event) => {
 		if (battleBotsFlag){
@@ -38,7 +50,7 @@ $( document ).ready(function() {
 			battleBotsImg.attr('src', '/img/battle_bots.png');
 			battleBotsFlag = true;
 		}
-	})
+	});
 
 	dtfImg.click((event) => {
 		if (dtfFlag){
@@ -48,7 +60,7 @@ $( document ).ready(function() {
 			dtfImg.attr('src', '/img/DTF_screenshot.png');
 			dtfFlag = true;
 		}
-	})
+	});
 
 	chattyImg.click((event) => {
 		if (chattyFlag){
@@ -58,7 +70,7 @@ $( document ).ready(function() {
 			chattyImg.attr('src', '/img/chatty.png');
 			chattyFlag = true;
 		}
-	})
+	});
 
 	headShot.click((event) => {
 		if ($(document).width() > 1008)
