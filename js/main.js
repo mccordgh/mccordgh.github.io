@@ -86,11 +86,11 @@ $( document ).ready(function() {
 
 function dealWithItYo(){
 	headShot.attr('src', "img/matt_goof.jpg");
-	dealInterval = setInterval(pullDownTheShades, 50);	// }
+	dealInterval = setInterval(pullDownTheShades, 50);
 }
 
 function unDealWithItYo(){
-	dealInterval = setInterval(pullUpTheBeat, 50);	// }
+	dealInterval = setInterval(pullUpTheBeat, 50);
 }
 
 function pullDownTheShades() {
