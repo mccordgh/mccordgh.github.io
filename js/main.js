@@ -98,7 +98,7 @@ $( document ).ready(function() {
 		}
 	});
 
-	headShot.on('touchstart click', (event) => {
+	headShot.on('tap click', (event) => {
 		whatsTheDeal();	
 	});
 
