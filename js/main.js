@@ -1,4 +1,3 @@
-let clickCounter = 0;
 let dealWithIt = false;
 let dealInterval = "";
 
@@ -97,7 +96,7 @@ function pullDownTheShades() {
 	currentTop = dealGlassesEl.css('top');
 	setTop = parseInt(currentTop) + 2;
 	dealGlassesEl.css({ top: setTop + 'px' });
-	if (setTop > 118) {
+	if (setTop > 146) {
 		clearInterval(dealInterval);
 	}
 }
@@ -107,7 +106,7 @@ function pullUpTheBeat() {
 	setTop = parseInt(currentTop) - 2;
 	dealGlassesEl.css({ top: setTop + 'px' });
 	if (setTop < -54) {
-		headShot.attr('src', "img/matt_close_beanie.jpg");
+		headShot.attr('src', "img/matt_is_cool.jpg");
 		clearInterval(dealInterval);
 	}
 }
@@ -127,19 +126,13 @@ function checkIsNotVisible(element){
 }
 
 function whatsTheDeal() {
-	clickCounter += 1;
-
-	if (clickCounter > 2) {
-		if (!dealWithIt) {
-			dealWithIt = true;
-			clickCounter = 0;
-			clearInterval(dealInterval);
-			dealWithItYo();
-		} else {
-			dealWithIt = false;
-			clickCounter = 0;
-			clearInterval(dealInterval);
-			unDealWithItYo();
-		}
+	if (!dealWithIt) {
+		dealWithIt = true;
+		clearInterval(dealInterval);
+		dealWithItYo();
+	} else {
+		dealWithIt = false;
+		clearInterval(dealInterval);
+		unDealWithItYo();
 	}
 }
