@@ -87,6 +87,10 @@ span {
 	cursor: pointer;
 }
 
+.divider {
+	margin: 30px;
+}
+
 .header--container {
 	padding-bottom: 40px;
 	width: 90%;
@@ -205,10 +209,6 @@ span {
 	text-align: justify;
 }
 
-.projects--row {
-	margin-bottom: 60px;
-}
-
 .social--icon {
   padding: 0 10px;
   margin: 0;
@@ -250,8 +250,13 @@ span {
 	.image--headshot {
 		display: block;
 		margin: 20px auto 0;
+		margin-top: 28px;
 		float: none;
 		cursor: initial;
+	}
+
+	.deal--glasses {
+		margin-left: -114px;
 	}
 
 	.page--header {
@@ -293,9 +298,6 @@ span {
 		float: none;
 	}
 
-	.image--headshot {
-		float: none;
-	}
 }
 
 @media screen and (max-width:330px) {

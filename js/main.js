@@ -1,5 +1,8 @@
 let dealWithIt = false;
 let dealInterval = "";
+let dealMin = 0;
+let dealMax = 0;
+let dealLeft = 0;
 
 let dealGlassesEl = $('#dealGlasses');
 let headShot = $('#headshot');
@@ -96,24 +99,22 @@ $( document ).ready(function() {
 	});
 
 	headShot.click((event) => {
-		if ($(document).width() > 1008)
-			whatsTheDeal();	
+		whatsTheDeal();	
 	});
 
 	dealGlassesEl.click((event) => {
-		if ($(document).width() > 1008)
-			whatsTheDeal();	
+		whatsTheDeal();	
 	});
 
 });
 
 function dealWithItYo(){
 	headShot.attr('src', "img/matt_goof.jpg");
-	dealInterval = setInterval(pullDownTheShades, 50);
+	dealInterval = setInterval(pullDownTheShades, 1);
 }
 
 function unDealWithItYo(){
-	dealInterval = setInterval(pullUpTheBeat, 50);
+	dealInterval = setInterval(pullUpTheBeat, 1);
 }
 
 function pullDownTheShades() {
