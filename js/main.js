@@ -97,12 +97,12 @@ $( document ).ready(function() {
 			chattyFlag = true;
 		}
 	});
-$('#whatever').on('touchstart click', function(){ /* do something... */ });
+
 	headShot.on('touchstart click', (event) => {
 		whatsTheDeal();	
 	});
 
-	dealGlassesEl.on('touchstart click', (event) => {
+	dealGlassesEl.on('tap click', (event) => {
 		whatsTheDeal();	
 	});
 
