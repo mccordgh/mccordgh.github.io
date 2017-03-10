@@ -7,8 +7,9 @@ body {
 
 a:hover {
 	cursor: pointer;
-	text-decoration: bold;
+	text-decoration: underline;
 }
+
 
 span {
 	display: block;
@@ -48,6 +49,12 @@ span {
 	box-shadow: 0 5px 15px #000;
 	border-radius: 10px;
 	min-height: 350px;
+}
+
+.code-word {
+	font-size: 1.30em;
+	display: inline;
+	color: #555;
 }
 
 .col--footer {
@@ -237,7 +244,7 @@ span {
 	}
 
 	.image--project {
-		max-height: 200px;
+		/*max-height: 200px;*/
 	}
 
 	.image--headshot {

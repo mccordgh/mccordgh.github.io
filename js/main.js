@@ -5,11 +5,15 @@ let dealGlassesEl = $('#dealGlasses');
 let headShot = $('#headshot');
 let dtfImg = $('#dtf_img');
 let chattyImg = $('#chatty_img');
+let bangCliImg = $('#bangazon_cli_img');
+let bangApiImg = $('#bangazon_api_img');
 let battleBotsImg = $('#battle_bots_img');
 let toyImg = $('#toy_img');
 let wavesImg = $('#waves_img');
 
 let dtfFlag = false;
+let bangApiFlag = false;
+let bangCliFlag = false;
 let chattyFlag = false;
 let battleBotsFlag = false;
 let toyFlag = false;
@@ -38,6 +42,26 @@ $( document ).ready(function() {
 		} else {
 			wavesImg.attr('src', '/img/waves87.png');
 			wavesFlag = true;
+		}
+	});
+
+	bangApiImg.click((event) => {
+		if (bangApiFlag){
+			bangApiImg.attr('src', '/img/bangazon_api_sm.png');
+			bangApiFlag = false;
+		} else {
+			bangApiImg.attr('src', '/img/bangazon_api.png');
+			bangApiFlag = true;
+		}
+	});
+
+	bangCliImg.click((event) => {
+		if (bangCliFlag){
+			bangCliImg.attr('src', '/img/bangazon_cli_sm.png');
+			bangCliFlag = false;
+		} else {
+			bangCliImg.attr('src', '/img/bangazon_cli.png');
+			bangCliFlag = true;
 		}
 	});
 
