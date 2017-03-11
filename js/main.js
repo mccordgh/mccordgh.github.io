@@ -110,11 +110,11 @@ $( document ).ready(function() {
 
 function dealWithItYo(){
 	headShot.attr('src', "img/matt_goof.jpg");
-	dealInterval = setInterval(pullDownTheShades, 45);
+	dealInterval = setInterval(pullDownTheShades, 35);
 }
 
 function unDealWithItYo(){
-	dealInterval = setInterval(pullUpTheBeat, 45);
+	dealInterval = setInterval(pullUpTheBeat, 35);
 }
 
 function pullDownTheShades() {
