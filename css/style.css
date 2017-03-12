@@ -63,13 +63,6 @@ span {
 	margin: 0 auto;
 }
 
-/*.col--project {
-	background-color:pink;
-	min-width: 280px;
-	margin: 0;
-	padding: 0;
-}
-*/
 .container {
 	width: 90%;
 }
@@ -89,6 +82,7 @@ span {
 
 .divider {
 	margin: 30px;
+	background-color: #666;
 }
 
 .header--container {
