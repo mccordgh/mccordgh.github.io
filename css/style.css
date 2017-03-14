@@ -3,6 +3,7 @@ body {
 	font-weight: 600;
 	color: #eee;
 	font-size: 1.25em;
+	background-color: #ddd;
 }
 
 a:hover {
@@ -42,7 +43,6 @@ span {
 {
   text-align: center;
   font-style: italic;
-  /*font-size: 1.25em;*/
 }
 
 .card {
@@ -166,18 +166,20 @@ span {
 	text-align: center;
 }
 
+.project--title {
+	background-color: #B2DFDB;
+	padding: 20px;
+	box-shadow: 0 1px 5px #000;
+	width: 70%;
+	margin: 0 auto;
+}
+
 .projects
 {
   text-align: center;
   margin-top: 40px;
 }
 
-/*.projects .col
-{
-  margin-bottom: 24px;
-  width: 90%;
-}
-*/
 .projects h2 {
 	text-align: left;
 	margin-top: 0;
@@ -200,7 +202,7 @@ span {
 }
 
 .projects p {
-	text-align: justify;
+	text-align: left;
 }
 
 .social--icon {
@@ -237,9 +239,6 @@ span {
 		padding: 0;
 	}
 
-	.image--project {
-		/*max-height: 200px;*/
-	}
 
 	.image--headshot {
 		display: block;
@@ -275,6 +274,10 @@ span {
 		text-align: center;
 		margin-top: 50px;
 		margin-left: 0;
+	}
+
+	.project--title {
+		width: 100%;
 	}
 
 	.projects h2 {
