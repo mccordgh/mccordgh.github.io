@@ -1,9 +1,9 @@
 body {
 	font-family: 'Lora', sans-serif;
 	font-weight: 600;
-	color: #eee;
+	color: #333;
 	font-size: 1.25em;
-	background-color: #ddd;
+	background-color: #eee;
 }
 
 a:hover {
@@ -207,6 +207,14 @@ span {
 
 .projects p {
 	text-align: left;
+}
+
+.project--links {
+	margin-top: 50px;
+}
+
+.project--links li {
+	margin: 25px 0;
 }
 
 .social--icon {
