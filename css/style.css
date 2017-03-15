@@ -174,7 +174,7 @@ span {
 	background-color: #B2DFDB;
 	padding: 20px;
 	box-shadow: 0 1px 5px #000;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -293,10 +293,6 @@ span {
 		text-align: center;
 		margin-top: 50px;
 		margin-left: 0;
-	}
-
-	.project--title {
-		width: 100%;
 	}
 
 	.projects h2 {
