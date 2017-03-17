@@ -173,9 +173,10 @@ span {
 .project--title {
 	background-color: #B2DFDB;
 	padding: 20px;
-	box-shadow: 0 1px 5px #000;
+	opacity: 0.6;
 	width: 100%;
 	margin: 0 auto;
+	color: #000;
 }
 
 .projects
