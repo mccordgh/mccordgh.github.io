@@ -7,6 +7,7 @@ let dealLeft = 0;
 let dealGlassesEl = $('#dealGlasses');
 let headShot = $('#headshot');
 let dtfImg = $('#dtf_img');
+let MMiImg = $('#MMi_img');
 let chattyImg = $('#chatty_img');
 let bangCliImg = $('#bangazon_cli_img');
 let bangApiImg = $('#bangazon_api_img');
@@ -14,6 +15,7 @@ let battleBotsImg = $('#battle_bots_img');
 let toyImg = $('#toy_img');
 let wavesImg = $('#waves_img');
 
+let MMiFlag = false;
 let dtfFlag = false;
 let bangApiFlag = false;
 let bangCliFlag = false;
@@ -35,6 +37,16 @@ $( document ).ready(function() {
 		} else {
 			toyImg.attr('src', '/img/toy_factory.png');
 			toyFlag = true;
+		}
+	});
+
+	MMiImg.click((event) => {
+		if (MMiFlag){
+			MMiImg.attr('src', '/img/MMi_screenshot_sm.png');
+			MMiFlag = false;
+		} else {
+			MMiImg.attr('src', '/img/MMi_screenshot.png');
+			MMiFlag = true;
 		}
 	});
 
@@ -131,7 +143,7 @@ function pullUpTheBeat() {
 	setTop = parseInt(currentTop) - 2;
 	dealGlassesEl.css({ top: setTop + 'px' });
 	if (setTop < -54) {
-		headShot.attr('src', "img/matt_is_cool.jpg");
+		headShot.attr('src', "img/matt_is_beard.jpg");
 		clearInterval(dealInterval);
 	}
 }
