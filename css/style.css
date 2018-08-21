@@ -1,158 +1,168 @@
+/* minty: #B2DFDB */
+/* goldy: #d4af37 */
+
+* {
+    letter-spacing: 0.1rem;
+}
+
 body {
-	font-family: 'Lora', sans-serif;
-	font-weight: 600;
-	color: #333;
-	font-size: 1.25em;
-	background-color: #eee;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Lora', sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+a {
+    color: #039be5;
 }
 
 a:hover {
-	cursor: pointer;
-	text-decoration: underline;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 
 span {
-	display: block;
-	text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .awards
 {
-	text-align: center;
+    text-align: center;
 }
 
 .awards .col
 {
-	margin: 0 auto 24px;
+    margin: 0 auto 24px;
 }
 
 .awards h2 {
-	text-align: left;
-  font-family: 'Pacifico', cursive;
+    text-align: left;
+    font-family: 'Pacifico', cursive;
 }
 
 .awards h5
 {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.5em;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .awards p
 {
-  text-align: center;
-  font-style: italic;
+    font-style: italic;
+    text-align: center;
 }
 
 .bullet-list--alt {
-	text-align: center;
+    text-align: center;
 }
 
 .card {
-	box-shadow: 0 5px 15px #000;
-	border-radius: 10px;
-	min-height: 350px;
+    box-shadow: 0 5px 15px #000;
+    border-radius: 10px;
+    min-height: 350px;
 }
 
 .code-word {
-	font-size: 1.30em;
-	display: inline;
-	color: #555;
+    display: inline;
+    color: #555;
+    font-size: 1.30em;
 }
 
 .col--footer {
-	width: 100%;
-	text-align: center;
-	margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
 
 .container {
-	width: 90%;
+    width: 90%;
 }
 
 .deal-with-it {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .deal--glasses {
-	float: left;
-	display: inline;
-	position: fixed;
-	padding-left: 5px;
-	top: -55px;
-	cursor: pointer;
+    cursor: pointer;
+    display: inline;
+    padding-left: 5px;
+    position: fixed;
+    top: -55px;
 }
 
 .divider {
-	margin: 30px;
-	background-color: #666;
+    background-color: #666;
+    margin: 30px;
 }
 
 .header--container {
-	padding-bottom: 40px;
-	width: 90%;
+    padding-bottom: 40px;
+    width: 90%;
 }
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 .image--headshot {
-	float: left;
-	width: 240px;
-	height: 240px;
-	margin-top: 30px;
-	border-radius: 400px;
-	cursor: pointer
+    border-radius: 400px;
+    cursor: pointer;
+    float: left;
+    height: 240px;
+    margin-top: 30px;
+    width: 240px;
 }
 
 .image--award {
-	height: 200px;
-	width: 260px;
-	margin: 0 auto;
-	border-radius: 20px;
+    border-radius: 20px;
+    height: 200px;
+    margin: 0 auto;
+    width: 260px;
 }
 
 .image--project {
-	width: 100%;
-	height: 100%;
-	border-radius: 20px;
-	margin-bottom: 10px;
-	margin-top: 25px;
+    border-radius: 20px;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    width: 100%;
 }
 
 .light-blue-text {
-	font-size: 1.2em;
-	padding: 15px;
-	color: rgb(46, 178, 255);
+    color: rgb(46, 178, 255);
+    font-size: 1.2em;
+    padding: 15px;
 }
 
 .material-placeholder {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .page--content {
-	margin: 0;
+    margin: 0;
 }
 
 .page--footer {
-	text-align: center;
-	margin: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .page--footer span {
-	margin-bottom: 10px;
-	font-size: 1em;
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
 .page--header {
-  text-align: left;
-  padding: 20px;
+    padding: 20px;
+    text-align: left;
 }
 
 .page--header p {
-	color: #ddd;
+    color: #ddd;
 }
 
 .page--header h2
@@ -166,155 +176,155 @@ span {
 }
 
 .page--title {
-	display: block;
-	text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .project--title {
-	background-color: #B2DFDB;
-	padding: 20px;
-	opacity: 0.6;
-	width: 100%;
-	margin: 0 auto;
-	color: #000;
+    background-color: #B2DFDB;
+    color: black;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
 }
 
 .projects
 {
-  text-align: center;
-  margin-top: 40px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .projects h2 {
-	text-align: left;
-	margin-top: 0;
-	margin-left: 16px;
-	font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', cursive;
+    margin-left: 16px;
+    margin-top: 0;
+    text-align: left;
 }
 
 .projects h5
 {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.75em;
-  font-weight: 800;
+    font-size: 1.75em;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .projects h6
 {
-  text-align: center;
-  margin-bottom: 45px;
+    margin-bottom: 45px;
+    text-align: center;
 }
 
 .projects p {
-	text-align: left;
+    text-align: left;
 }
 
 .project--links {
-	margin-top: 50px;
+    margin-top: 50px;
 }
 
 .project--links li {
-	margin: 25px 0;
+    margin: 25px 0;
 }
 
 .social--icon {
-  padding: 0 10px;
-  margin: 0;
-  height: 32px;
-  width: 48px;
+    height: 32px;
+    margin: 0;
+    padding: 0 10px;
+    width: 48px;
 }
 
 .title {
-	text-decoration: underline;
-	color: #333;
-	margin-bottom: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    text-decoration: underline;
 }
 
 .transparent {
-	zoom: 1;
-	filter: alpha(opacity=50);
-	opacity: 0.5;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    zoom: 1;
 }
 
 .oval {
-	width: 280px;
-  height: 300px;
-	border-radius: 50%;
-  float: left;
-  shape-outside: ellipse();
-  padding: 10px;
-	background-clip: content-box;
-}	
+    background-clip: content-box;
+    border-radius: 50%;
+    float: left;
+    height: 300px;
+    padding: 10px;
+    shape-outside: ellipse();
+    width: 280px;
+}
 
 .resume--button {
-	margin-bottom: 25px;
-	background-color: #666;
-	padding: 5px;
-	box-shadow: 0 1px 5px #000;
+    background-color: #424242;
+    box-shadow: 0 1px 5px #000;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.resume--button:focus {
+    background-color: #424242;
 }
 
 @media screen and (max-width:1024px) {
-	.row {
-		padding: 0;
-	}
+    .row {
+        padding: 0;
+    }
 
 
-	.image--headshot {
-		display: block;
-		margin: 20px auto 0;
-		margin-top: 28px;
-		float: none;
-	}
+    .image--headshot {
+        display: block;
+        float: none;
+        margin: 20px auto 0;
+        margin-top: 28px;
+    }
 
-	.deal--glasses {
-		margin-left: -114px;
-	}
+    .deal--glasses {
+        margin-left: -114px;
+    }
 
-	.page--header {
-		text-align: center;
-	}
+    .page--header {
+        text-align: center;
+    }
 
-	.page--header h2 {
-		margin-top: 290px;
-	}
+    .page--header h2 {
+        margin-top: 290px;
+    }
 
-	.oval {
-	  width: 200px;
-	  height: 200px;
-	  margin: 0;
-	  padding: 0;
-	  display: block;
-	  width: 100%;
-	}
+    .oval {
+        display: block;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:540px) {
-	.page--header h2 {
-		text-align: center;
-		margin-top: 50px;
-		margin-left: 0;
-	}
+    .page--header h2 {
+        margin-left: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
 
-	.projects h2 {
-		text-align: center;
-		margin-left: 0;
-	}
+    .projects h2 {
+        margin-left: 0;
+        text-align: center;
+    }
 
-	.awards h2 {
-		text-align: center;
-		margin-left: 0;
-	}
+    .awards h2 {
+        margin-left: 0;
+        text-align: center;
+    }
 
-	.oval {
-		float: none;
-	}
-
+    .oval {
+        float: none;
+    }
 }
 
 @media screen and (max-width:330px) {
-	.row {
-		padding: 0;
-	}
+    .row {
+        padding: 0;
+    }
 }
-
