@@ -8,37 +8,25 @@ let dealGlassesEl = $('#dealGlasses');
 let headShot = $('#headshot');
 let dtfImg = $('#dtf_img');
 let MMiImg = $('#MMi_img');
-let chattyImg = $('#chatty_img');
 let bangCliImg = $('#bangazon_cli_img');
-let bangApiImg = $('#bangazon_api_img');
 let battleBotsImg = $('#battle_bots_img');
-let toyImg = $('#toy_img');
 let wavesImg = $('#waves_img');
+let toDontClientImg = $('#to_dont_client_img');
+let toDontApiImg = $('#to_dont_api_img');
 
 let MMiFlag = false;
 let dtfFlag = false;
-let bangApiFlag = false;
 let bangCliFlag = false;
-let chattyFlag = false;
 let battleBotsFlag = false;
-let toyFlag = false;
 let wavesFlag = false;
+let toDontClientFlag = false;
+let toDontApiFlag = false;
 
 $( document ).ready(function() {
-	
+
 	window.onscroll = () => {
 		checkIsNotVisible( $('.page--header') );
 	};
-
-	toyImg.click((event) => {
-		if (toyFlag){
-			toyImg.attr('src', '/img/toy_factory_sm.png');
-			toyFlag = false;
-		} else {
-			toyImg.attr('src', '/img/toy_factory.png');
-			toyFlag = true;
-		}
-	});
 
 	MMiImg.click((event) => {
 		if (MMiFlag){
@@ -57,16 +45,6 @@ $( document ).ready(function() {
 		} else {
 			wavesImg.attr('src', '/img/waves87.png');
 			wavesFlag = true;
-		}
-	});
-
-	bangApiImg.click((event) => {
-		if (bangApiFlag){
-			bangApiImg.attr('src', '/img/bangazon_api_sm.png');
-			bangApiFlag = false;
-		} else {
-			bangApiImg.attr('src', '/img/bangazon_api.png');
-			bangApiFlag = true;
 		}
 	});
 
@@ -100,22 +78,32 @@ $( document ).ready(function() {
 		}
 	});
 
-	chattyImg.click((event) => {
-		if (chattyFlag){
-			chattyImg.attr('src', '/img/chatty_sm.png');
-			chattyFlag = false;
+	toDontClientImg.click((event) => {
+		if (toDontClientFlag){
+			toDontClientImg.attr('src', '/img/to_dont_list_client_sm.png');
+			toDontClientFlag = false;
 		} else {
-			chattyImg.attr('src', '/img/chatty.png');
-			chattyFlag = true;
+			toDontClientImg.attr('src', '/img/to_dont_list_client.png');
+			toDontClientFlag = true;
+		}
+	});
+
+	toDontApiImg.click((event) => {
+		if (toDontApiFlag){
+			toDontApiImg.attr('src', '/img/to_dont_list_api_sm.png');
+			toDontApiFlag = false;
+		} else {
+			toDontApiImg.attr('src', '/img/to_dont_list_api.png');
+			toDontApiFlag = true;
 		}
 	});
 
 	headShot.on('tap click', (event) => {
-		whatsTheDeal();	
+		whatsTheDeal();
 	});
 
 	dealGlassesEl.on('tap click', (event) => {
-		whatsTheDeal();	
+		whatsTheDeal();
 	});
 
 });
@@ -151,13 +139,13 @@ function pullUpTheBeat() {
 function checkIsNotVisible(element){
 	let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 	let d = $(document).scrollTop() + 500;
-	
+
   p = element.position();
   //vertical
   if (p.top > h + d || p.top > h - d){
   	dealGlassesEl.addClass('hidden');
   } else {
-  	dealGlassesEl.removeClass('hidden');  	
+  	dealGlassesEl.removeClass('hidden');
   }
 
 }
