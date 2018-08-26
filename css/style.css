@@ -2,6 +2,7 @@
 /* goldy: #d4af37 */
 
 * {
+    box-sizing: border-box;
     letter-spacing: 0.1rem;
 }
 
@@ -301,7 +302,11 @@ span {
     }
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:768px) {
+    * {
+        font-size: 1.2rem;
+    }
+
     .page--header h2 {
         margin-left: 0;
         margin-top: 50px;
