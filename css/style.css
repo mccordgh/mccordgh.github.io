@@ -20,7 +20,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -182,8 +182,8 @@ span {
 }
 
 .project--title {
-    background-color: #B2DFDB;
-    color: black;
+    background-color: #3bddbb;
+    color: white;
     margin: 0 auto;
     padding: 20px;
     width: 100%;

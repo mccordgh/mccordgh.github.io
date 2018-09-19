@@ -7,6 +7,7 @@ let dealLeft = 0;
 let dealGlassesEl = $('#dealGlasses');
 let headShot = $('#headshot');
 let dtfImg = $('#dtf_img');
+let coreImg = $('#core_img');
 let MMiImg = $('#MMi_img');
 let bangCliImg = $('#bangazon_cli_img');
 let battleBotsImg = $('#battle_bots_img');
@@ -16,6 +17,7 @@ let toDontApiImg = $('#to_dont_api_img');
 
 let MMiFlag = false;
 let dtfFlag = false;
+let coreFlag = false;
 let bangCliFlag = false;
 let battleBotsFlag = false;
 let wavesFlag = false;
@@ -28,7 +30,7 @@ $( document ).ready(function() {
 		checkIsNotVisible( $('.page--header') );
 	};
 
-	MMiImg.click((event) => {
+	MMiImg.click(() => {
 		if (MMiFlag){
 			MMiImg.attr('src', '/img/MMi_screenshot_sm.png');
 			MMiFlag = false;
@@ -38,7 +40,7 @@ $( document ).ready(function() {
 		}
 	});
 
-	wavesImg.click((event) => {
+	wavesImg.click(() => {
 		if (wavesFlag){
 			wavesImg.attr('src', '/img/waves87_sm.png');
 			wavesFlag = false;
@@ -48,7 +50,7 @@ $( document ).ready(function() {
 		}
 	});
 
-	bangCliImg.click((event) => {
+	bangCliImg.click(() => {
 		if (bangCliFlag){
 			bangCliImg.attr('src', '/img/bangazon_cli_sm.png');
 			bangCliFlag = false;
@@ -58,7 +60,7 @@ $( document ).ready(function() {
 		}
 	});
 
-	battleBotsImg.click((event) => {
+	battleBotsImg.click(() => {
 		if (battleBotsFlag){
 			battleBotsImg.attr('src', '/img/battle_bots_sm.png');
 			battleBotsFlag = false;
@@ -68,7 +70,17 @@ $( document ).ready(function() {
 		}
 	});
 
-	dtfImg.click((event) => {
+	coreImg.click(() => {
+		if (coreFlag){
+			coreImg.attr('src', '/img/core_screenshot_sm.png');
+			coreFlag = false;
+		} else {
+			coreImg.attr('src', '/img/core_screenshot.png');
+			coreFlag = true;
+		}
+	});
+
+	dtfImg.click(() => {
 		if (dtfFlag){
 			dtfImg.attr('src', '/img/DTF_screenshot_sm.png');
 			dtfFlag = false;
@@ -78,7 +90,7 @@ $( document ).ready(function() {
 		}
 	});
 
-	toDontClientImg.click((event) => {
+	toDontClientImg.click(() => {
 		if (toDontClientFlag){
 			toDontClientImg.attr('src', '/img/to_dont_list_client_sm.png');
 			toDontClientFlag = false;
@@ -88,7 +100,7 @@ $( document ).ready(function() {
 		}
 	});
 
-	toDontApiImg.click((event) => {
+	toDontApiImg.click(() => {
 		if (toDontApiFlag){
 			toDontApiImg.attr('src', '/img/to_dont_list_api_sm.png');
 			toDontApiFlag = false;
@@ -98,11 +110,11 @@ $( document ).ready(function() {
 		}
 	});
 
-	headShot.on('tap click', (event) => {
+	headShot.on('tap click', () => {
 		whatsTheDeal();
 	});
 
-	dealGlassesEl.on('tap click', (event) => {
+	dealGlassesEl.on('tap click', () => {
 		whatsTheDeal();
 	});
 
