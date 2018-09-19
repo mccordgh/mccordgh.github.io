@@ -143,7 +143,7 @@ function pullUpTheBeat() {
 	setTop = parseInt(currentTop) - 2;
 	dealGlassesEl.css({ top: setTop + 'px' });
 	if (setTop < -54) {
-		headShot.attr('src', "img/matt_is_beard.jpg");
+		headShot.attr('src', "img/mccordinator.jpg");
 		clearInterval(dealInterval);
 	}
 }

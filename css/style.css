@@ -183,7 +183,7 @@ span {
 
 .project--title {
     background-color: #3bddbb;
-    color: white;
+    color: azure;
     margin: 0 auto;
     padding: 20px;
     width: 100%;
@@ -197,8 +197,7 @@ span {
 
 .projects h2 {
     font-family: 'Pacifico', cursive;
-    margin-left: 16px;
-    margin-top: 0;
+    margin: 2rem 1rem 2rem 0;
     text-align: left;
 }
 
